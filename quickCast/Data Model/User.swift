@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+class User {
+    var username : String = ""
+    var password : String = ""
+}

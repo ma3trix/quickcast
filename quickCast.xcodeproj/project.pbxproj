@@ -16,6 +16,7 @@
 		30A1879C2479F195002524E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A1879A2479F195002524E1 /* LaunchScreen.storyboard */; };
 		30C64D13247E5A0500D43987 /* waves.gif in Resources */ = {isa = PBXBuildFile; fileRef = 30C64D12247E5A0500D43987 /* waves.gif */; };
 		30C64D17247F51E900D43987 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C64D16247F51E900D43987 /* AudioToolbox.framework */; };
+		30C64D1B247F888800D43987 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C64D1A247F888800D43987 /* User.swift */; };
 		30CEC741247A3F0D00A89443 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC740247A3F0D00A89443 /* MainTabController.swift */; };
 		30CEC743247A469100A89443 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC742247A469100A89443 /* FeedsViewController.swift */; };
 		30CEC745247A506900A89443 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC744247A506900A89443 /* ProfileViewController.swift */; };
@@ -33,8 +34,8 @@
 		30A1879B2479F195002524E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A1879D2479F195002524E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C64D12247E5A0500D43987 /* waves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = waves.gif; sourceTree = "<group>"; };
-		30C64D14247F51E900D43987 /* quickCast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quickCast.entitlements; sourceTree = "<group>"; };
 		30C64D16247F51E900D43987 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		30C64D1A247F888800D43987 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		30CEC740247A3F0D00A89443 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		30CEC742247A469100A89443 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		30CEC744247A506900A89443 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -73,14 +74,12 @@
 		30A1878E2479F193002524E1 /* quickCast */ = {
 			isa = PBXGroup;
 			children = (
-				30C64D14247F51E900D43987 /* quickCast.entitlements */,
 				30A1878F2479F193002524E1 /* AppDelegate.swift */,
 				30A187912479F193002524E1 /* SceneDelegate.swift */,
-				30A187952479F193002524E1 /* Main.storyboard */,
 				30CEC74B247B521500A89443 /* Controllers */,
-				30A187982479F195002524E1 /* Assets.xcassets */,
-				30C64D12247E5A0500D43987 /* waves.gif */,
-				30A1879A2479F195002524E1 /* LaunchScreen.storyboard */,
+				30C64D1C247F889200D43987 /* Data Model */,
+				30C64D18247F875F00D43987 /* Views */,
+				30C64D19247F879600D43987 /* Supporting Files */,
 				30A1879D2479F195002524E1 /* Info.plist */,
 			);
 			path = quickCast;
@@ -92,6 +91,32 @@
 				30C64D16247F51E900D43987 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30C64D18247F875F00D43987 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30A187952479F193002524E1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30C64D19247F879600D43987 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30A187982479F195002524E1 /* Assets.xcassets */,
+				30C64D12247E5A0500D43987 /* waves.gif */,
+				30A1879A2479F195002524E1 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30C64D1C247F889200D43987 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				30C64D1A247F888800D43987 /* User.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		30CEC74B247B521500A89443 /* Controllers */ = {
@@ -184,6 +209,7 @@
 				30CEC747247A7DC300A89443 /* SettingsViewController.swift in Sources */,
 				308FB1E8247B860800D467B8 /* RecordViewController.swift in Sources */,
 				30A187942479F193002524E1 /* LoginViewController.swift in Sources */,
+				30C64D1B247F888800D43987 /* User.swift in Sources */,
 				30A187902479F193002524E1 /* AppDelegate.swift in Sources */,
 				30CEC741247A3F0D00A89443 /* MainTabController.swift in Sources */,
 				30A187922479F193002524E1 /* SceneDelegate.swift in Sources */,
