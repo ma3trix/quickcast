@@ -1,0 +1,20 @@
+//
+//  MainTabController.swift
+//  quickCast
+//
+//  Created by Malik Adebiyi on 2020-05-24.
+//  Copyright © 2020 dotSandbox. All rights reserved.
+//
+
+import Foundation
+import UIKit
+
+class MainTabController: UITabBarController  {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+
+}
