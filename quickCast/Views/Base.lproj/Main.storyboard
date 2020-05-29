@@ -159,20 +159,27 @@
                                 </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c62-H1-1Fb">
-                                <rect key="frame" x="58" y="61.999999999999986" width="298" height="210.66666666666663"/>
+                                <rect key="frame" x="58" y="26.666666666666657" width="298" height="245.99999999999997"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="180" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p3n-Yc-2el">
+                                        <rect key="frame" x="0.0" y="0.0" width="298" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="24j-15-ZMM">
-                                        <rect key="frame" x="0.0" y="0.0" width="298" height="155"/>
+                                        <rect key="frame" x="0.0" y="35.333333333333329" width="298" height="155"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="155" id="qBF-Sa-S39"/>
                                         </constraints>
                                     </imageView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="QSM-O0-Fzy">
-                                        <rect key="frame" x="0.0" y="170" width="298" height="2"/>
+                                        <rect key="frame" x="0.0" y="205.33333333333334" width="298" height="2"/>
                                         <color key="progressTintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="trackTintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="St3-PI-Q8h">
-                                        <rect key="frame" x="0.0" y="187" width="298" height="23.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="222.33333333333334" width="298" height="23.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g43-D0-YdD">
                                                 <rect key="frame" x="0.0" y="0.0" width="25" height="23.666666666666668"/>
@@ -181,7 +188,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-na-QxO">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-na-QxO" userLabel="centerButton">
                                                 <rect key="frame" x="140" y="0.0" width="18.666666666666657" height="23.666666666666668"/>
                                                 <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="play.fill" catalog="system">
@@ -219,8 +226,11 @@
                     <tabBarItem key="tabBarItem" title="" image="mic.fill" catalog="system" id="k7Z-LY-ipC"/>
                     <connections>
                         <outlet property="gifImage" destination="24j-15-ZMM" id="hdb-SV-2U0"/>
+                        <outlet property="progressBar" destination="QSM-O0-Fzy" id="3Zr-No-X6A"/>
                         <outlet property="recBTN" destination="goO-DM-Ayb" id="6fl-Nb-WPi"/>
                         <outlet property="recTableView" destination="WwU-08-eQQ" id="db0-bA-iyq"/>
+                        <outlet property="recordButton" destination="M5A-na-QxO" id="7WU-o5-ES1"/>
+                        <outlet property="timerLabel" destination="p3n-Yc-2el" id="LGD-XY-3VP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ID4-Sl-Wlc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

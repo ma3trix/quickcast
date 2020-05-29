@@ -36,6 +36,7 @@
 		30C64D12247E5A0500D43987 /* waves.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = waves.gif; sourceTree = "<group>"; };
 		30C64D16247F51E900D43987 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		30C64D1A247F888800D43987 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30C64D1D247F9D1700D43987 /* quickCast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = quickCast.entitlements; sourceTree = "<group>"; };
 		30CEC740247A3F0D00A89443 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		30CEC742247A469100A89443 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		30CEC744247A506900A89443 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		30A1878E2479F193002524E1 /* quickCast */ = {
 			isa = PBXGroup;
 			children = (
+				30C64D1D247F9D1700D43987 /* quickCast.entitlements */,
 				30A1878F2479F193002524E1 /* AppDelegate.swift */,
 				30A187912479F193002524E1 /* SceneDelegate.swift */,
 				30CEC74B247B521500A89443 /* Controllers */,
