@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         
         let mainTabController = storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
         
-        mainTabController.selectedViewController = mainTabController.viewControllers?[1]
+        mainTabController.selectedViewController = mainTabController.viewControllers?[3]
         
 //        present(mainTabController, animated: true, completion: nil)
         

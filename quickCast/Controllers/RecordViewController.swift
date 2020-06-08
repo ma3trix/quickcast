@@ -18,13 +18,13 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
     
     var numberOfRecords: Int = 0
     var timer = Timer()
-    var totalTime = 20
+    var totalTime = 180
     var secondsPassed = 0
     @IBOutlet weak var recordButton: UIButton!
     var timerActive : Bool = false
     
-    let playSymbol = UIImage(systemName: "play.fill")
-    let stopSymbol = UIImage(systemName: "stop.fill")
+    let recordSymbol = UIImage(systemName: "mic.circle.fill")
+    let stopSymbol = UIImage(systemName: "stop.circle")
     
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var timerLabel: UILabel!
@@ -37,15 +37,16 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        gifImage.loadGif(name: "waves")
         recTableView.rowHeight = 63.9
         progressBar.progress = 0.0
         
-                print("device path is: ")
+        print("device path is: ")
         
-                if let number : Int = UserDefaults.standard.object(forKey: "lastNumber") as? Int
-                {
-                    numberOfRecords = number
-                }
+        if let number : Int = UserDefaults.standard.object(forKey: "lastNumber") as? Int
+        {
+            numberOfRecords = number
+        }
         print(numberOfRecords)
         
         //set up session
@@ -63,18 +64,18 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
     @IBAction func record(_ sender: UIButton)
     {
         updateTimer()
-
+        
         //Timer
         timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
-
+        
         //Check if we have an active recorder
         if audioRecorder == nil
         {
             numberOfRecords += 1
             let filename = getDirectory().appendingPathComponent("Cast\(numberOfRecords).m4a")
             let settings = [AVFormatIDKey: Int(kAudioFormatMPEG4AAC), AVSampleRateKey: 32000, AVNumberOfChannelsKey: 1, AVEncoderAudioQualityKey: AVAudioQuality.max.rawValue]
-        
+            
             //start audio recording
             do
             {
@@ -83,7 +84,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
                 audioRecorder.record()
                 recBTN.setTitle("Recording..", for: .normal)
                 sender.setImage(stopSymbol, for: .normal)
-
+                
             }
             catch
             {
@@ -100,10 +101,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             progressBar.progress = 0.0
             
             UserDefaults.standard.set(numberOfRecords, forKey: "lastNumber")
-
+            
             recTableView.reloadData()
             recBTN.setTitle("Start Recording", for: .normal)
-            sender.setImage(playSymbol, for: .normal)
+            sender.setImage(recordSymbol, for: .normal)
         }
     }
     
@@ -135,7 +136,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             let audioPath = try FileManager.default.contentsOfDirectory(at: recPath, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             
             for audio in audioPath
-{
+            {
                 let myAudio = audio.absoluteString
                 
                 if myAudio.contains(".m4a")
@@ -152,7 +153,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
         }
         
     }
+    
     //MARK: - Timer & Progress Bar
+    
     @objc func updateTimer()
     {
         if  secondsPassed < totalTime {
@@ -161,7 +164,7 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             secondsPassed += 1
             timerLabel.text = String(secondsPassed)
             recordButton.setImage(stopSymbol, for: .normal)
-
+            
             
         }
         else
@@ -173,13 +176,10 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             audioRecorder?.stop()
             progressBar.progress = 0.0
             recTableView.reloadData()
-            recordButton.setImage(playSymbol, for: .normal)
+            recordButton.setImage(recordSymbol, for: .normal)
         }
     }
-    
-    //MARK: - Load GIF
-    
-    
+
     //MARK: - Setting Up Table View
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -211,5 +211,5 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             print(error)
         }
     }
- 
+    
 }
