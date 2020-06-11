@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3066C0BB248E444200DEAE7F /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066C0BA248E444200DEAE7F /* ActionButton.swift */; };
 		306D843A248DEC280062B9A9 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D8439248DEC280062B9A9 /* GifCell.swift */; };
 		308FB1E8247B860800D467B8 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FB1E7247B860800D467B8 /* RecordViewController.swift */; };
 		30A187902479F193002524E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1878F2479F193002524E1 /* AppDelegate.swift */; };
@@ -48,9 +49,13 @@
 		30CEC743247A469100A89443 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC742247A469100A89443 /* FeedsViewController.swift */; };
 		30CEC745247A506900A89443 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC744247A506900A89443 /* ProfileViewController.swift */; };
 		30CEC747247A7DC300A89443 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC746247A7DC300A89443 /* SettingsViewController.swift */; };
+		30D562B12490E665002B6F5A /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D562B02490E665002B6F5A /* Line.swift */; };
+		30D562B3249202A6002B6F5A /* CreatePostViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30D562B2249202A6002B6F5A /* CreatePostViewController.storyboard */; };
+		30D562B524920318002B6F5A /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D562B424920318002B6F5A /* CreatePostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3066C0BA248E444200DEAE7F /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
 		306D8439248DEC280062B9A9 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		308FB1E7247B860800D467B8 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		30A1878C2479F193002524E1 /* quickCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +100,9 @@
 		30CEC742247A469100A89443 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		30CEC744247A506900A89443 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		30CEC746247A7DC300A89443 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		30D562B02490E665002B6F5A /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		30D562B2249202A6002B6F5A /* CreatePostViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreatePostViewController.storyboard; sourceTree = "<group>"; };
+		30D562B424920318002B6F5A /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +193,7 @@
 		30C64D18247F875F00D43987 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30D562B2249202A6002B6F5A /* CreatePostViewController.storyboard */,
 				30A187952479F193002524E1 /* Main.storyboard */,
 			);
 			path = Views;
@@ -204,6 +213,8 @@
 			isa = PBXGroup;
 			children = (
 				30C64D1A247F888800D43987 /* User.swift */,
+				3066C0BA248E444200DEAE7F /* ActionButton.swift */,
+				30D562B02490E665002B6F5A /* Line.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -219,6 +230,7 @@
 				30CEC744247A506900A89443 /* ProfileViewController.swift */,
 				306D8439248DEC280062B9A9 /* GifCell.swift */,
 				30CEC746247A7DC300A89443 /* SettingsViewController.swift */,
+				30D562B424920318002B6F5A /* CreatePostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -296,6 +308,7 @@
 				30B19ADB248DF06A00016BC0 /* 4.gif in Resources */,
 				30B19ACF248DF06A00016BC0 /* 22.gif in Resources */,
 				30B19AD7248DF06A00016BC0 /* 9.gif in Resources */,
+				30D562B3249202A6002B6F5A /* CreatePostViewController.storyboard in Resources */,
 				30B19ACB248DF06A00016BC0 /* 14.gif in Resources */,
 				30B19AD5248DF06A00016BC0 /* 15.gif in Resources */,
 				30A1879C2479F195002524E1 /* LaunchScreen.storyboard in Resources */,
@@ -327,10 +340,13 @@
 				308FB1E8247B860800D467B8 /* RecordViewController.swift in Sources */,
 				30C8998E2484A600002AAF19 /* Gif.swift in Sources */,
 				30A187942479F193002524E1 /* LoginViewController.swift in Sources */,
+				30D562B12490E665002B6F5A /* Line.swift in Sources */,
+				30D562B524920318002B6F5A /* CreatePostViewController.swift in Sources */,
 				30C64D1B247F888800D43987 /* User.swift in Sources */,
 				30A187902479F193002524E1 /* AppDelegate.swift in Sources */,
 				30CEC741247A3F0D00A89443 /* MainTabController.swift in Sources */,
 				30A187922479F193002524E1 /* SceneDelegate.swift in Sources */,
+				3066C0BB248E444200DEAE7F /* ActionButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

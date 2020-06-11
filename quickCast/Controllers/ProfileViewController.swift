@@ -15,10 +15,18 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var gifCollectionView: UICollectionView!
+    @IBOutlet weak var actionBTN: UIButton!
+    @IBOutlet weak var EditProfile: UIButton!
+    @IBAction func EditProfleBTN(_ sender: Any) {
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.clipsToBounds = true
+        EditProfile.layer.borderColor = UIColor.orange.cgColor
+        EditProfile.layer.borderWidth = 1.5
+        EditProfile.layer.cornerRadius = EditProfile.frame.size.width  / 31.69
         profileImage.loadGif(name: "3")
         //layout based on width of the screen
         let itemSize = UIScreen.main.bounds.width/3 - 3
@@ -36,19 +44,10 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         // add layout to collection view
         gifCollectionView.collectionViewLayout = layout
         
+        //MARK: - Action Button
+        actionBTN.createFloationActionButton()
+        
     }
-    
-    /*
-     func getImage() -> String {
-     var img = ""
-     
-     for gif in userGIF {
-     img = gif + ".gif"
-     }
-     print(".gif" + img)
-     return img
-     }
-     */
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -65,3 +64,4 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
     
 
 }
+

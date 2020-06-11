@@ -31,6 +31,8 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
     @IBOutlet weak var recTableView: UITableView!
     @IBOutlet weak var recBTN: UIButton!
     @IBOutlet weak var gifImage: UIImageView!
+    @IBOutlet weak var actionBTN: UIButton!
+
     
     // create file path to document folder
     let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
@@ -59,6 +61,9 @@ class RecordViewController: UIViewController, AVAudioRecorderDelegate, UITableVi
             }
             
         }
+        
+        //MARK: - Action Button
+        actionBTN.createFloationActionButton()
     }
     
     @IBAction func record(_ sender: UIButton)
