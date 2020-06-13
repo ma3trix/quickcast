@@ -50,7 +50,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="star.fill" catalog="system" id="GUu-2Y-fNs"/>
+                    <tabBarItem key="tabBarItem" title="" image="message.fill" catalog="system" id="GUu-2Y-fNs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,7 +116,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opy-5o-TBG" customClass="ActionButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opy-5o-TBG" customClass="ActionButton" customModule="quickCast" customModuleProvider="target">
                                 <rect key="frame" x="348" y="621" width="56" height="56"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -126,6 +126,7 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="plus" catalog="system"/>
                                 <connections>
+                                    <action selector="actionBTN:" destination="gDr-VH-ndT" eventType="touchUpInside" id="8Du-iM-FHR"/>
                                     <segue destination="A4I-ww-QJd" kind="presentation" id="Dnx-Jw-rTn"/>
                                 </connections>
                             </button>
@@ -373,7 +374,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ULB-yZ-roe"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="mic.fill" catalog="system" id="k7Z-LY-ipC"/>
+                    <tabBarItem key="tabBarItem" title="" image="globe" catalog="system" id="k7Z-LY-ipC"/>
                     <connections>
                         <outlet property="actionBTN" destination="hb5-s8-JoX" id="wK0-fC-fHt"/>
                         <outlet property="gifImage" destination="24j-15-ZMM" id="hdb-SV-2U0"/>
@@ -465,7 +466,7 @@
         <scene sceneID="vIw-hW-nfq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DIs-kf-57o" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="waveform.path" catalog="system" id="u4o-C3-I6G"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="u4o-C3-I6G"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nxY-nU-IpX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
@@ -534,12 +535,12 @@
         <image name="arrow.clockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrow.counterclockwise.circle.fill" catalog="system" width="128" height="121"/>
         <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="110"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="mic.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="person.badge.plus.fill" catalog="system" width="128" height="116"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="plus" catalog="system" width="128" height="113"/>
-        <image name="star.fill" catalog="system" width="128" height="116"/>
-        <image name="waveform.path" catalog="system" width="128" height="117"/>
     </resources>
 </document>

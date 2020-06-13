@@ -48,6 +48,13 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         actionBTN.createFloationActionButton()
         
     }
+    @IBAction func actionBTN(_ sender: UIButton) {
+        let generator = UIImpactFeedbackGenerator(style: .medium)
+        generator.prepare()
+        generator.impactOccurred()
+        sender.pulsate()
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -62,6 +69,6 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
-
+    
 }
 

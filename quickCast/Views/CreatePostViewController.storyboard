@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="yuD-Ip-eiQ">
-                                <rect key="frame" x="30" y="49" width="354" height="30"/>
+                                <rect key="frame" x="20" y="59" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrn-G2-JCF">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
@@ -29,7 +29,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geU-0y-v7b">
-                                        <rect key="frame" x="314" y="0.0" width="40" height="30"/>
+                                        <rect key="frame" x="334" y="0.0" width="40" height="30"/>
                                         <state key="normal" title="Share">
                                             <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -40,7 +40,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NxR-34-opu">
-                                <rect key="frame" x="30" y="89" width="354" height="196"/>
+                                <rect key="frame" x="30" y="99" width="354" height="196"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="196" id="0u2-YZ-gLX"/>
@@ -54,10 +54,10 @@
                         <constraints>
                             <constraint firstItem="NxR-34-opu" firstAttribute="leading" secondItem="ObT-yR-WDT" secondAttribute="leading" constant="30" id="6gS-OZ-BS9"/>
                             <constraint firstItem="ObT-yR-WDT" firstAttribute="trailing" secondItem="NxR-34-opu" secondAttribute="trailing" constant="30" id="8Ia-Ir-hjg"/>
-                            <constraint firstItem="yuD-Ip-eiQ" firstAttribute="top" secondItem="ObT-yR-WDT" secondAttribute="top" constant="5" id="DqD-Lr-fz8"/>
+                            <constraint firstItem="yuD-Ip-eiQ" firstAttribute="top" secondItem="ObT-yR-WDT" secondAttribute="top" constant="15" id="DqD-Lr-fz8"/>
                             <constraint firstItem="NxR-34-opu" firstAttribute="top" secondItem="yuD-Ip-eiQ" secondAttribute="bottom" constant="10" id="ZWO-RF-qzs"/>
-                            <constraint firstItem="ObT-yR-WDT" firstAttribute="trailing" secondItem="yuD-Ip-eiQ" secondAttribute="trailing" constant="30" id="eeg-NE-Ese"/>
-                            <constraint firstItem="yuD-Ip-eiQ" firstAttribute="leading" secondItem="ObT-yR-WDT" secondAttribute="leading" constant="30" id="xuj-tJ-toj"/>
+                            <constraint firstItem="ObT-yR-WDT" firstAttribute="trailing" secondItem="yuD-Ip-eiQ" secondAttribute="trailing" constant="20" id="eeg-NE-Ese"/>
+                            <constraint firstItem="yuD-Ip-eiQ" firstAttribute="leading" secondItem="ObT-yR-WDT" secondAttribute="leading" constant="20" id="xuj-tJ-toj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ObT-yR-WDT"/>
                     </view>
