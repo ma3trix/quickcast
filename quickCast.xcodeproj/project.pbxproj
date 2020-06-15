@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3066C0BB248E444200DEAE7F /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066C0BA248E444200DEAE7F /* ActionButton.swift */; };
+		3066C0BB248E444200DEAE7F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3066C0BA248E444200DEAE7F /* Extensions.swift */; };
 		306D843A248DEC280062B9A9 /* GifCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306D8439248DEC280062B9A9 /* GifCell.swift */; };
 		308FB1E8247B860800D467B8 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FB1E7247B860800D467B8 /* RecordViewController.swift */; };
 		30A187902479F193002524E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A1878F2479F193002524E1 /* AppDelegate.swift */; };
@@ -55,7 +55,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3066C0BA248E444200DEAE7F /* ActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		3066C0BA248E444200DEAE7F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		306D8439248DEC280062B9A9 /* GifCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifCell.swift; sourceTree = "<group>"; };
 		308FB1E7247B860800D467B8 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		30A1878C2479F193002524E1 /* quickCast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quickCast.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				30C64D1A247F888800D43987 /* User.swift */,
-				3066C0BA248E444200DEAE7F /* ActionButton.swift */,
+				3066C0BA248E444200DEAE7F /* Extensions.swift */,
 				30D562B02490E665002B6F5A /* Line.swift */,
 			);
 			path = "Data Model";
@@ -346,7 +346,7 @@
 				30A187902479F193002524E1 /* AppDelegate.swift in Sources */,
 				30CEC741247A3F0D00A89443 /* MainTabController.swift in Sources */,
 				30A187922479F193002524E1 /* SceneDelegate.swift in Sources */,
-				3066C0BB248E444200DEAE7F /* ActionButton.swift in Sources */,
+				3066C0BB248E444200DEAE7F /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
