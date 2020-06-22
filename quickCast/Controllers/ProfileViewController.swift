@@ -25,9 +25,9 @@ class ProfileViewController: UIViewController, UICollectionViewDataSource, UICol
         super.viewDidLoad()
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
         profileImage.clipsToBounds = true
-        EditProfile.layer.borderColor = UIColor.orange.cgColor
-        EditProfile.layer.borderWidth = 1.5
-        EditProfile.layer.cornerRadius = EditProfile.frame.size.width  / 31.69
+//        EditProfile.layer.borderColor = UIColor.orange.cgColor
+//        EditProfile.layer.borderWidth = 1.5
+//        EditProfile.layer.cornerRadius = EditProfile.frame.size.width  / 31.69
         profileImage.loadGif(name: "3")
         //layout based on width of the screen
         let itemSize = UIScreen.main.bounds.width/3 - 3
